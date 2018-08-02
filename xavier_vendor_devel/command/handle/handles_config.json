@@ -1,0 +1,35 @@
+#system instruction
+{"cmd": "help",                            "module":"system",           "handle": "help_handle",                    "description":"Get command help info"}
+{"cmd": "net set",                        "module":"system",           "handle": "net_set_handle",              "description":"Network information set"}
+{"cmd": "net read",                     "module":"system",           "handle": "net_read_handle",           "description":"Network information read"}
+{"cmd": "version",                       "module":"system",           "handle": "version_handle",              "description":"firmware version information"}
+{"cmd": "synctime",                    "module":"system",           "handle": "synctime_handle",           "description":"synctime read or write"}
+{"cmd": "reset",                           "module":"system",           "handle": "reset_handle",                  "description":"reset the system"}
+{"cmd": "barcode",                     "module":"system",           "handle": "barcode_handle",             "description":"seeing barcode  read and write"}
+{"cmd": "sn",                                "module":"system",           "handle": "sn_handle",                       "description":"customer serial-number read and write"}
+{"cmd": "arm delay",                  "module":"system",           "handle": "arm_delay_handle",        "description":"Millisecond delay"}
+{"cmd": "utc read",                     "module":"system",           "handle": "fpga_utc_read_handle",  "description":"utc time read"}
+{"cmd": "fpga utc read",             "module":"system",           "handle": "fpga_utc_read_handle",  "description":"utc time read"}
+{"cmd": "update",                        "module":"system",          "handle": "update_handle",               "description":"update firmware"}
+#{"cmd": "test time out",                        "module":"system",          "handle": "test_timeout_handle",               "description":"test time out"}
+#{"cmd": "update check",          "module":"system",           "handle": "update_check_handle",   "description":"check the update file "}
+
+#io
+{"cmd": "io set",                           "module":"io",                    "handle": "io_set_handle",                       "description":"set io output high or low level"}
+{"cmd": "io read",                        "module":"io",                    "handle": "io_read_handle",                    "description":"read io output or input state"}
+{"cmd": "io dir set",                     "module":"io",                    "handle": "io_dir_set_handle",                 "description":"configure io output or input dir"}
+{"cmd": "io dir read",                  "module":"io",                    "handle": "io_dir_read_handle",              "description":"read io dir configuration"}
+{"cmd": "io chip set",                  "module":"io",                    "handle": "io_chip_set_handle",               "description":"set io output high or low level through io chip serial-number"}
+{"cmd": "io chip read",               "module":"io",                    "handle": "io_chip_read_handle",            "description":"read io output or input state through io chip serial-number"}
+{"cmd": "io chip dir set",            "module":"io",                    "handle": "io_chip_dir_set_handle",         "description":"configure io output or input dir through io chip serial-number"}
+{"cmd": "io chip dir read",         "module":"io",                    "handle": "io_chip_dir_read_handle",      "description":"read io dir configuration through io chip serial-number"}
+
+#eeprom
+{"cmd": "eeprom read",                      "module":"eeprom",           "handle": "eeprom_read_handle",                       "description":"eeprom read hex date"}
+{"cmd": "eeprom write",                     "module":"eeprom",           "handle": "eeprom_write_handle",                       "description":"eeprom write hex date"}
+{"cmd": "eeprom string read",           "module":"eeprom",           "handle": "eeprom_string_read_handle",            "description":"eeprom read string date"}
+{"cmd": "eeprom string write",          "module":"eeprom",           "handle": "eeprom_string_write_handle",           "description":"eeprom write string date"}
+
+#uart
+{"cmd":"uart config",           "module":"uart","handle":"uart_config_handle",  "description":"config uart"}
+{"cmd":"uart close",         "module":"uart","handle":"uart_close_handle",    "description":"close uart"}

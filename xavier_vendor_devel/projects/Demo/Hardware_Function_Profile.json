@@ -1,0 +1,36 @@
+{
+    "project": "Demo",
+    "base_board": { "partno": "demo-001-001", "id": "instrument"},
+    "hardware_version": "Xavier-001-005A",
+
+    "buses": [
+        {"bus": "uart", "id": "UART1", "path": "AXI4_Uart_1", "ipcore": "Axi4Uart", "port":7601,
+            "baudrate": "115200", "databits": "8", "stopbits":"1", "parity":"none", "timestamp":"none"
+        },
+        {"bus": "uart", "id": "UART2", "path": "AXI4_Uart_2", "ipcore": "Axi4Uart", "port":7602,
+            "baudrate": "115200", "databits": "8", "stopbits":"1", "parity":"none", "timestamp":"none"
+        },
+        
+        {"bus": "i2c", "id": "i2c_0", "path": "AXI4_I2C_0", "rate": "100000", "ipcore":"Axi4I2c"},
+        {"bus": "i2c", "id": "i2c_1", "path": "AXI4_I2C_1", "rate": "100000", "ipcore":"Axi4I2c"}
+    ],
+
+    "chips": [
+    	{"partno": "DemoChip", "id":"chip_demo1","init_msg": "chip_test"}
+    
+    ],
+
+    "boards": [
+        {"partno": "DemoBoard001001", "id": "board_demo1",
+        "chip":{"partno": "demo_chip", "id":"chip_demo1","init_msg": "chip_test"}
+	    	
+         }
+    ],
+	"netconfig": {
+            "start_ip": "192.168.99.4",
+            "mask": "255.255.255.0",
+            "exceptional_ip": "192.168.99.1",
+            "netio":{
+                }
+            }
+}

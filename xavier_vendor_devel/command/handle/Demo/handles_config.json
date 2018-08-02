@@ -1,0 +1,20 @@
+#system instruction
+{"cmd": "help",                            "module":"system",           "handle": "help_handle",                    "description":"Get command help info"}
+{"cmd": "net set",                        "module":"system",           "handle": "net_set_handle",              "description":"Network information set"}
+{"cmd": "net read",                     "module":"system",           "handle": "net_read_handle",           "description":"Network information read"}
+{"cmd": "version",                       "module":"system",           "handle": "version_handle",              "description":"firmware version information"}
+{"cmd": "synctime",                    "module":"system",           "handle": "synctime_handle",           "description":"synctime read or write"}
+{"cmd": "reset",                           "module":"system",           "handle": "reset_handle",                  "description":"reset the system"}
+{"cmd": "barcode",                     "module":"system",           "handle": "barcode_handle",             "description":"seeing barcode  read and write"}
+{"cmd": "sn",                                "module":"system",           "handle": "sn_handle",                       "description":"customer serial-number read and write"}
+{"cmd": "arm delay",                  "module":"system",           "handle": "arm_delay_handle",        "description":"Millisecond delay"}
+{"cmd": "utc read",                     "module":"system",           "handle": "fpga_utc_read_handle",  "description":"utc time read"}
+{"cmd": "fpga utc read",             "module":"system",           "handle": "fpga_utc_read_handle",  "description":"utc time read"}
+{"cmd": "update",                        "module":"system",          "handle": "update_handle",               "description":"update firmware"}#{"cmd": "test time out",            "module":"system",          "handle": "test_timeout_handle",               "description":"test time out"}
+#{"cmd": "update check",          "module":"system",           "handle": "update_check_handle",   "description":"check the update file "}
+
+
+#demo
+{"cmd": "hello",                     "module":"demo_handle",           "handle": "hello_handle",  "description":"hello"}
+{"cmd": "hello read",             "module":"demo_handle",           "handle": "hello_read_handle",  "description":"read"}
+{"cmd": "hello write",            "module":"demo_handle",           "handle": "hello_write_handle",  "description":"write"}

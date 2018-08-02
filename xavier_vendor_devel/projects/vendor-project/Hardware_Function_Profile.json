@@ -1,0 +1,17 @@
+{
+    "project": "vendor-project",
+    "base_board": { "partno": "Debug-002-001", "id": "instrument"},
+    "hardware_version": "Xavier-001-005A",
+
+    "buses": [
+    ],
+
+    "chips": [
+    ],
+
+    "boards": [
+    ]
+}
+
+
+
